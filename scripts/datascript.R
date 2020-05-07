@@ -26,4 +26,4 @@ DataSources <- read.csv(file = './Data/DataSources.csv')
 
 Freshwater_all <- right_join(AbundDat, plotDat, by = 'Plot_ID') %>%
   right_join(DataSources, by = c("DataSource_ID.x" = "DataSource_ID")) %>%
-  filter(Realm == "Freshwater") %>% select(-DataSource_ID.y) %>% rename(Datasource_ID = "DataSource_ID.x")
+  filter(Realm == "Freshwater") %>% select(-DataSource_ID.y) %>% rename(DataSource_ID = "DataSource_ID.x")
