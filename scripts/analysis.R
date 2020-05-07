@@ -4,8 +4,24 @@ source("./scripts/datascript.R")
 
 #Freshwater_all contains the full freshwater subsets
 
+#create a group split on individual datasets 
+freshwater_lists <- Freshwater_all %>%
+  #I don't think this is the correct way to 
+  named_group_split(DataSource_ID, InvertebrateGroup)
 
 
+#### +++++++++++++++++++++++++++++++++++++++++++++ ####
+##        DEBUG CODE FOR TESTING         ##
+##       PLEASE CHECK                    ##
+debugonce(trend_detect)
+freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSource_ID","MetricAB"))
+
+#### ++++++++++++++ END DEBUG ++++++++++++++++++++ ####
+
+
+# apply trend detect function the list and bind together to data.frame
+freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSource_ID","MetricAB")) %>%
+  bind_rows
 
 
 
