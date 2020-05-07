@@ -1,0 +1,86 @@
+DataSource_ID,SampleArea,NumberOfReplicates,SamplingMethod,GroupInData,OriginalMetric,Datasource_name,Continent
+1421,0.1m2,"3 per    site, samples every 2 months",Surber sample / box sampler,All_invertebrates,density,Arkansas freshwater,North America
+1431,363+-18cm2,,scraping ,Brachycentrus,density_(no/m2),Alaska freshwater,North America
+1431,363+-18cm2,,scraping ,Black Flies,density_(no/m2),Alaska freshwater,North America
+1431,363+-18cm2,,scraping ,Baetis,density_(no/m2),Alaska freshwater,North America
+1431,363+-18cm2,,scraping ,Ephemerella ,density_(no/m2),Alaska freshwater,North America
+1431,363+-18cm2,,scraping ,Orthocladius,density_(no/m2),Alaska freshwater,North America
+1431,363+-18cm2,,scraping ,Chironomidae,density_(no/m2),Alaska freshwater,North America
+1381,0.045 m2 (?),variable,cilinder(?),Chironomidae,Chironomidae_mean_number,Brazil chironomids,Latin America
+1439,0.05 m2,7,Modified Peterson grab,Chironomidae,Abundance_(ind./m2),China freshwater,Asia
+1423,0.1m2,5,Hess sampler spring and autumn,Macroinvertebrate,macroinvertebrates_per0.1m2,Colorado freshwater,North America
+1423,0.1m2,5,Hess sampler spring and autumn,Mayfly,Mayflies_per0.1m2,Colorado freshwater,North America
+1414,NA,1,window trap,Chironomidae,Number_of_biovoltine_species,Iceland mosquitos,Europe
+1414,NA,1,window trap,Chironomidae,Numbers_of_univoltine_Chironomidae,Iceland mosquitos,Europe
+1427,0.093 m2,5,Surber sampler,All_macroinvertebrate,Mean_macroinvertebrate_density,Idaho freshwater,North America
+1437,unclear,5,Surber net,Freshwater_invertebrates,Biomass_mg/m2,Idaho freshwater 2,North America
+1441,unclear,5,5 secon burtst of dome suction sampler,Freshwater_invertebrates,Mean_abundance_per_m2,Lake Ontario Freshwater,North America
+1417,NA,7,sampling baskets,Freshwater_invertebrates,Total_Insect_Mass_(mg/gm),Michigan freshwater,North America
+1432,400cm2,4,coring ,Freshwater_invertebrates,Monthly_invertebrate_biomass_in_mixed_substrates,North Carolina freshwater,North America
+1432,15*15cm,3,scraping,Freshwater_invertebrates,Monthly_invertebrate_biomass_in_rockface_habitats,North Carolina freshwater,North America
+1428,0.093 m2/0.086cm2,unclear,surber/hess sampler,All_macroinvertebrates,Total_numbers,Pennsylvania freshwater,North America
+1376,50*50cm?,3,Surber samples,freshwater fauna,Total_abundances,Taiwan freshwater,Asia
+1418,NA,9 to 12,net,larval dragonflies,Population_size,Tennessee dragonflies,North America
+1440,variable,variable,"Ekman, Peterson, Ponar dredge",larval dragonflies,Density_(ind./m2)_of_major_taxa_of_benthic_invertebrates,Winnipeg freshwater,North America
+1440,variable,variable,"Ekman, Peterson, Ponar dredge",Trichoptera,Density_(ind./m2)_of_major_taxa_of_benthic_invertebrates,Winnipeg freshwater,North America
+1440,variable,variable,"Ekman, Peterson, Ponar dredge",Chronomidae,Density_(ind./m2)_of_major_taxa_of_benthic_invertebrates,Winnipeg freshwater,North America
+1415,0.05 m2,"5 grabs, 33 stations",Ponar grab sampler,Ephemeroptera,Abundance(number_m2),Wisconsin mayflies,North America
+1424,unclear,3,Hester endy artificial substrate,freshwater fauna,total_insect_abundance,Wisconsin freshwater,North America
+1422,0.086 m2,unclear,Hess sampler,"EPT = Ephemeroptera, Plecoptera, Trichoptera",EPT_density_(no./0.1 m2),Tennessee Freshwater,North America
+1426,16.1 m2/4m2,1(?) per site,Emergence trap,Black_Flies,Number_of_catches,Pennsylvania blackflies,North America
+1395,25*25cm,unclear,,Total_classified_invertebrates,individuals 625 cm2,Africa freshwater,Africa
+1412,"5m waterplants, shore and bottom",unclear,water net,Freshwater_fauna,Average_number_of_animals_per_m2_per_period,Netherlands FW Amsterdam,Europe
+1429,0.023 m2,"2-5, 1-18 times per season ",Eckman grab,freshwater fauna,numberPerMeterSquared,New York freshwater,North America
+1408,1.3m2,"23 sites, 4 30s samples per site per year",kicksampler,Freshwater fauna,number per 13. m2 per year,Finland freshwater,Europe
+63,NA,20 ponds,Transect counts (?),Dragonflies,number per year ,BioTIME 63 UK dragonflies,Europe
+1473,0.298 m2,3,Hess sampler,freshwater fauna,number per 0.29 m2 sample,Idaho freshwater 3,North America
+1466,unknown,60 stations across the lake,"Standard methods, ",Zoobentos,Biomass_g/m2,Kazachstan freshwater,Asia
+1448,5 times of 10 L of water filtered through Apstein net with 80 mkm sieve,30 samples each year,Apstein net,Macrofauna,Abundance_per_m2_(*1000),Russia freshwater,Europe
+1425,103cm2,5,modified T-sampler,Freshwater_invertebrates,Number_m2,Georgia freshwater,North America
+1435,15cm2/0.09m2,12 per biotope,Eckman and surber samples,All_freshwater_invertebrates,Density(no./m2),Kentucky freshwater,North America
+1449,unclear,unclear,Petersen dredge,Zoobenthos,Abundance_thousand_indiv./m2,Russia freshwater 2,Europe
+1451,250 cm2,unclear,Pedersen bottom-scrapper ,Zoobenthos,Biomass_(g/m2),Russia freshwater 4,Europe
+1452,unclear,34,"""Common methods""",groups Zoobentos,Biomass_(g_per_m2),Russia freshwater 5,Europe
+1452,unclear,9,"""Common methods""",Zoobentos,Biomass_(g_per_m2),Russia freshwater 5,Europe
+1453, 0.25 m2,2 samples at each station,Petersen bottom scraber,Zoobentos,Abundance_(indiv./m2) ,Russia freshwater 6,Europe
+1454, 0.25 m2,2 samples at each station,Petersen bottom scraber,Zoobentos,Biomass_of_coastal_zoobenthos(g_per_m2) ,Russia freshwater 7,Europe
+1454, 0.25 m2,2 samples at each station,Petersen bottom scraber,Zoobentos,Biomass_of_deepwater_zoobenthos(g_per_m2) ,Russia freshwater 7,Europe
+1455,0.04 m2,unclear,Petersen bottom scraber ,Zoobentos,Total_abundance_(ind./m2),Russia freshwater 8,Europe
+1456,unclear,unclear,unclear,Zoobentos,Abundance_(indiv./m2),Russia freshwater 9,Europe
+1456,unclear,unclear,unclear,Zoobentos,Biomass (g/m2),Russia freshwater 9,Europe
+1457,0.0025m2,8,suction grab + eckman ,Zoobentos,Relative_abundances,Russia freshwater 10,Europe
+478,12 m long greenhouse over stream ,1 per plot,Emergence trap,"Ephemeroptera, Trichoptera, Plecoptera",sum per year,Germany EPT Breitenbach,Europe
+1351,,5 per plo,Surber sampler,freshwater fauna,total per trapping period,LTER Arizona FW,North America
+1347,NA,3-Jan,modified Hester-Dendy samplers,freshwater fauna,mean number of individuals,LTER North Temperate Lakes Benthic Macroinvertebrates,North America
+1433,0.05m2,8,Surber Net,freshwater invertebrates,number per year ,Belgium freshwater,Europe
+1430,0.1 m2,variable,Surber Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.43 m2,variable,Hess Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.86 m2,variable,Hess Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.688 m2,variable,Hess Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.1 m2,variable,Hess Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.516 m2,variable,Hess Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.3 m2,variable,Surber Net,freshwater invertebrates,number per m2,Utah freshwater,North America
+1430,0.176  m2,variable,Tee Sampler,freshwater invertebrates,number per m2,Utah freshwater,North America
+1388,0.093?m2,5,0.5?mm mesh Surber,freshwater invertebrates,number per 5 samples,California freshwater inverts Resh,North America
+1491,unclear,1 to 6,Kick sample,all invertebrates,number per trap per date,Brazil Freshwater 2,Latin America
+1444,unclear,1,Surber Net,all invertebrates,number per sample,New Zealand freshwater monitoring,Australia
+1488,variable,variable,Ekman grab,freshwater invertebrates,abundance per m2,Sweden freshwater,Europe
+1488,variable,variable,Kick sample,freshwater invertebrates,abundance per sample,Sweden freshwater,Europe
+1498,"0.13m2 quadrat until October 1990, 0.0625 m2",5 per date,surber sampler,all freshwater invertebrates,number per m2,Ireland freshwater,Europe
+1499,unclear,monthly,Kick sample,Ephemeroptera,sum per year,Scottland freshwater,Europe
+1500,unclear,6 to 12 samples per year,Kick sample,freshwater fauna,,Wales freshwater,Europe
+1503,unclear,5 per sampling,artificial substrate samplers (ASSs),freshwater invertebrates,density,Australia fw,Australia
+1504,1.4m2,5,variety of methods,freshwater invertebrates,density,California mine fw,North America
+1506,3 * 0.006m2,3,core sampling,freshwater invertebrates,density,Costa Rica freshwater,Latin America
+1507,0.01m2,3,Eckman grab,freshwater invertebrates,density,Russia freshwater 11,Asia
+1513,10*0.1 m2,10,Kick sample,freshwater invertebrates,density,Italy freshwater,Europe
+1509,unknown,unclear,not specified,freshwater invertebrates,density,Russia freshwater 13,Europe
+1510,1/40 m2,2,Peterson grab,freshwater invertebrates,density/m2,Russia freshwater 14,Europe
+1511,unknown,variable? 56 in 2004,standardized methods' ,freshwater invertebrates,biomass g/m2,Russia freshwater 15,Asia
+1517,NA,10,15 min hand catch,all_mosquitos,number per habitat per year,China mosquitos,Asia
+1519,NA,12,New Jersey light trap,mosquitos,mean per night,US mosquitos Rochlin,North America
+1519,NA,7,New Jersey light trap,mosquitos,mean per night,US mosquitos Rochlin,North America
+1527,NA,4,New Jersey light trap,mosquitos,mean per night,US mosquitos Rochlin,North America
+1520,NA,variable,lighttrap,mosquitos,mn no per trap per night ,Iowa mosquitos,North America
+1525,NA,1,lighttrap,mosquitos,mn no per trap per night ,Indiana mosquitos,North America
+1526,NA,1,lighttrap,mosquitos,mn no per trap per night ,Florida mosquitos,North America
