@@ -1,6 +1,7 @@
 rm(list = ls())
 source("./scripts/install-packages.R")
 source("./scripts/datascript.R")
+theme_set(theme_mod)
 
 #Freshwater_all contains the full freshwater subsets
 
@@ -18,13 +19,18 @@ freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSour
 
 #### ++++++++++++++ END DEBUG ++++++++++++++++++++ ####
 
-
 # apply trend detect function the list and bind together to data.frame
-freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSource_ID","MetricAB")) %>%
+freshwater_out <- lapply(freshwater_lists, trend_detect, 
+                         cols_keep = c("DataSource_ID","MetricAB")) %>%
   bind_rows
 
+#write csv of all the 
+write.csv(freshwater_out, file = "./output/trend_detect.csv", row.names = FALSE)
 
 
+# First attempt at figure
+
+ggplot(freshwater_out, aes(trend)) + geom_bar() + scale_y_continuous(limits = c(0,50),expand = c(0,0))
 
 ## Open plotting device. After plot has rendered expand window to 
 ## fullscreen before exporting for best visual.
