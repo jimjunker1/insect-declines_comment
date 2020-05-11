@@ -8,7 +8,7 @@ if ("pacman" %in% rownames(installed.packages()) == FALSE) install.packages("pac
 # they are important for running the livedat repository
 # OG package list: pacman::p_load(git2r, httr, semver, testthat, yaml)
 
-pacman::p_load(dplyr, ggplot2)
+pacman::p_load(tidyverse, googlesheets4)
 pacman::p_load_gh("jimjunker1/junkR")
 
 #' This function calculates the trend and assigns the study to a category: "trend"
@@ -25,7 +25,7 @@ trend_detect <- function(data, cols_keep = NULL, alpha = 0.05,...){
   
   if(is.null(cols_keep)){data_mod = na.omit(data[c("Year","Number")])} else{data_mod = na.omit(data[c(cols_keep, "Year","Number")])}
   trend_summ <- summary(lm(log10(Number+1)~Year, data = data_mod))$coefficients
-  df_add <- data.frame(trend = NA, coef = round(trend_summ['Year','Estimate'],2), coef_se = round(trend_summ['Year','Std. Error'],2), N = nobs(lm(Number~Year, data = data_mod)))
+  df_add <- data.frame(trend = NA, coef = round(trend_summ['Year','Estimate'],3), coef_se = round(trend_summ['Year','Std. Error'],3), N = nobs(lm(Number~Year, data = data_mod)))
   
  if(is.na(trend_summ['Year','Pr(>|t|)'])){
    df_add[,'trend'] <- 'NA'
