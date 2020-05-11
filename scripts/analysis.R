@@ -10,15 +10,14 @@ freshwater_lists <- Freshwater_all %>%
   #I don't think this is the correct way to subset, but I can't figure out how else to do it.
   named_group_split(DataSource_ID, Plot_ID)
 
-
 #### +++++++++++++++++++++++++++++++++++++++++++++ ####
 ##        DEBUG CODE FOR TESTING         ##
 ##       PLEASE CHECK                    ##
-debugonce(trend_detect)
+debug(trend_detect)
 freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSource_ID","MetricAB"))
 
 #### ++++++++++++++ END DEBUG ++++++++++++++++++++ ####
-
+j = 0
 # apply trend detect function the list and bind together to data.frame
 freshwater_out <- lapply(freshwater_lists, trend_detect, 
                          cols_keep = c("DataSource_ID","MetricAB"), alpha = 0.1) %>%
