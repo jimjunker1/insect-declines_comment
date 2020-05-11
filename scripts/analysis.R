@@ -7,8 +7,8 @@ theme_set(theme_mod)
 
 #create a group split on individual datasets 
 freshwater_lists <- Freshwater_all %>%
-  #I don't think this is the correct way to 
-  named_group_split(DataSource_ID, InvertebrateGroup)
+  #I don't think this is the correct way to subset, but I can't figure out how else to do it.
+  named_group_split(DataSource_ID, Plot_ID)
 
 
 #### +++++++++++++++++++++++++++++++++++++++++++++ ####
