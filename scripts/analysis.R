@@ -21,7 +21,7 @@ freshwater_out <- lapply(freshwater_lists, trend_detect, cols_keep = c("DataSour
 
 # apply trend detect function the list and bind together to data.frame
 freshwater_out <- lapply(freshwater_lists, trend_detect, 
-                         cols_keep = c("DataSource_ID","MetricAB")) %>%
+                         cols_keep = c("DataSource_ID","MetricAB"), alpha = 0.1) %>%
   bind_rows
 
 #write csv of all the 
