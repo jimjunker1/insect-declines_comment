@@ -28,6 +28,14 @@ Freshwater_all <- right_join(AbundDat, plotDat, by = 'Plot_ID') %>%
   right_join(DataSources, by = c("DataSource_ID.x" = "DataSource_ID")) %>%
   filter(Realm == "Freshwater") %>% select(-DataSource_ID.y) %>% rename(DataSource_ID = "DataSource_ID.x")
 
-#Bring in the google sheet.
+#   Bring in the google sheet. Rerun when updated   #
+# sheets_auth(email = "james.junker1@gmail.com")
+# options(gargle_oauth_email = "james.junker1@gmail.com")
+# sheet_id = as_sheets_id("https://docs.google.com/spreadsheets/d/1WTVyr0CVUy9OG0SD6SbVCn855-1bTHtC1bSWVf2b5P0/edit#gid=0")
+# sheets_meta  = sheets_get(sheets_id)
+# vanklink_sheet <- sheets_read(sheets_meta[['spreadsheet_id']])
+# saveRDS(vanKlink_sheet, file = "./Data/vanKlink_sheet.rds")
+
+
 vanklink_sheet <- readRDS(file = "./Data/vanKlink_sheet.rds")
 
