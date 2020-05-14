@@ -25,6 +25,7 @@ trend_detect <- function(data, cols_keep = NULL, alpha = 0.05,...){
   
   if(is.null(cols_keep)){data_mod = na.omit(data[c("Year","Number")])} else{data_mod = na.omit(data[c(cols_keep, "Year","Number")])}
   trend_summ <- summary(lm(log10(Number+1)~Year, data = data_mod))$coefficients
+  # trend_summ <- cor(~Year + log10(Number+1), data = data_mod, method = "spearman")
   df_add <- data.frame(trend = NA, coef = round(trend_summ['Year','Estimate'],3), coef_se = round(trend_summ['Year','Std. Error'],3), N = nobs(lm(Number~Year, data = data_mod)))
   
  if(is.na(trend_summ['Year','Pr(>|t|)'])){

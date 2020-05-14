@@ -16,10 +16,13 @@ freshwater_out <- lapply(freshwater_lists, trend_detect,
                          cols_keep = c("DataSource_ID","Plot_ID"), alpha = 0.1) %>%
   bind_rows
 
+freshwater_cor <- lapply(freshwater_lists, function(x){trend <-  cor.test(~Year+log10(Number+1), data = x, method = "spearman"); return(trend$estimate)}) %>%
+  flatten %>% unlist
+x <- cbind(freshwater_out, freshwater_cor)
 # Bind with vanKlink sheet
-df <- vanklink_sheet %>%
+df <- vanklink_sheet %>% select(-trend, -14) %>%
   left_join(freshwater_out) %>%
-  select(DataSource_ID,reference:N) %>%
+  select(DataSource_ID,category:N) %>%
   mutate(category = as.character(category),
          reference = as.character(reference)) %>%
   rename(title_journal_etc = "title_journal_ect") %>%

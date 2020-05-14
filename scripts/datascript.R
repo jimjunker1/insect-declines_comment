@@ -32,8 +32,8 @@ Freshwater_all <- right_join(AbundDat, plotDat, by = 'Plot_ID') %>%
 # sheets_auth(email = "james.junker1@gmail.com")
 # options(gargle_oauth_email = "james.junker1@gmail.com")
 # sheet_id = as_sheets_id("https://docs.google.com/spreadsheets/d/1WTVyr0CVUy9OG0SD6SbVCn855-1bTHtC1bSWVf2b5P0/edit#gid=0")
-# sheets_meta  = sheets_get(sheets_id)
-# vanklink_sheet <- sheets_read(sheets_meta[['spreadsheet_id']])
+# sheets_meta  = sheets_get(sheet_id)
+# vanKlink_sheet <- sheets_read(sheets_meta[['spreadsheet_id']])
 # saveRDS(vanKlink_sheet, file = "./Data/vanKlink_sheet.rds")
 
 
